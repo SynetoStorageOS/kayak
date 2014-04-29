@@ -30,8 +30,8 @@ fail() {
 }
 
 PUBLISHER=omnios
-OMNIOS_URL=http://pkg.omniti.com/omnios/release
-: ${PKGURL:=http://pkg.omniti.com/omnios/release}
+OMNIOS_URL=http://pkg.omniti.com/omnios/r151010
+: ${PKGURL:=http://pkg.omniti.com/omnios/r151010}
 : ${BZIP2:=bzip2}
 ZROOT=rpool
 OUT=

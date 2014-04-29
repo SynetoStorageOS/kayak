@@ -30,7 +30,7 @@ fail() {
 }
 
 PUBLISHER=omnios
-: ${PKGURL:=http://pkg.omniti.com/omnios/release}
+: ${PKGURL:=http://pkg.omniti.com/omnios/r151010}
 : ${GZIP_CMD:=gzip}
 SRCDIR=$(dirname $0)
 DIDWORK=0
