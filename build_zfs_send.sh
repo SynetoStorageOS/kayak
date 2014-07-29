@@ -29,7 +29,7 @@ fail() {
   exit 1
 }
 
-PUBLISHER=omnios
+PUBLISHER=syneto.eu
 OMNIOS_URL=http://pkg.omniti.com/omnios/r151010
 : ${PKGURL:=http://pkg.omniti.com/omnios/r151010}
 : ${BZIP2:=bzip2}

@@ -29,7 +29,7 @@ fail() {
 	exit 1
 }
 
-PUBLISHER=omnios
+PUBLISHER=syneto.eu
 : ${PKGURL:=http://pkg.omniti.com/omnios/r151010}
 : ${GZIP_CMD:=gzip}
 SRCDIR=$(dirname $0)
