@@ -30,8 +30,8 @@ fail() {
 }
 
 PUBLISHER=syneto.eu
-OMNIOS_URL=http://pkg.omniti.com/omnios/r151010
-: ${PKGURL:=http://pkg.omniti.com/omnios/r151010}
+OMNIOS_URL=http://storageos3.syneto.net
+: ${PKGURL:=file:///code/storageos3-repo/publisher/syneto.eu}
 : ${BZIP2:=bzip2}
 ZROOT=rpool
 OUT=
@@ -100,8 +100,8 @@ if [[ -n "$PUBLISHER_OVERRIDE" ]]; then
   OMNIOS_URL=$PKGURL
 fi
 echo "Setting omnios publisher to $OMNIOS_URL"
-pkg -R $MP unset-publisher omnios
-pkg -R $MP set-publisher -P --no-refresh -g $OMNIOS_URL omnios
+pkg -R $MP unset-publisher syneto.eu
+pkg -R $MP set-publisher -P --no-refresh -g $OMNIOS_URL syneto.eu
 
 zfs snapshot $ZROOT/$name@kayak || fail "snap"
 zfs send $ZROOT/$name@kayak | $BZIP2 -9 > $OUT || fail "send/compress"
