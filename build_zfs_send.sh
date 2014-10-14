@@ -34,7 +34,7 @@ PUBLISHER=syneto.eu
 OMNIOS_URL=http://storageos3.syneto.net
 : ${PKGURL:=file:///code/storageos3-repo/publisher/syneto.eu}
 : ${BZIP2:=bzip2}
-ZROOT=rpool
+ZROOT=code
 OUT=
 CLEANUP=0
 set -- `getopt cd:o:p: $*`
