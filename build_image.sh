@@ -30,7 +30,7 @@ fail() {
 }
 
 PUBLISHER=syneto.eu
-: ${PKGURL:=http://pkg.omniti.com/omnios/r151010}
+: ${PKGURL:=file:///code/storageos3-repo/publisher/syneto.eu}
 : ${GZIP_CMD:=gzip}
 SRCDIR=$(dirname $0)
 DIDWORK=0

@@ -29,6 +29,7 @@ fail() {
   exit 1
 }
 
+# NOTE --> The URL needs to be updated with every release.  
 PUBLISHER=syneto.eu
 OMNIOS_URL=http://storageos3.syneto.net
 : ${PKGURL:=file:///code/storageos3-repo/publisher/syneto.eu}
